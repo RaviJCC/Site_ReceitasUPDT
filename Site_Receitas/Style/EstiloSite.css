@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 3000px;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: solid 3px;
+    border-color: #000;
+  }
+  
+  .submenu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .submenu a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .banner {
+    background-image: url('https://www.viladospescados.com.br/images/banner-responsivo1-receitas.jpg');
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 100px 0;
+    height: 500px;
+    margin-bottom: 60px;
+  }
+  
+  .ReceitasEmAlta {
+    padding: 50px 0;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none; 
+    color: inherit; 
+    width: 100%;
+    max-width: 400px; 
+    padding: 20px;
+    border: 2px solid black; 
+    border-radius: 10px; 
+    margin-top: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out; 
+  }
+
+  .ReceitasEmAlta .Carrossel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.ReceitasEmAlta .Carrossel {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.Carrossel {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.carrossel-container {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.item-carrossel {
+  min-width: 100%;
+  flex: 0 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.item-carrossel img {
+  width: 100%;
+  height: auto;
+  text-decoration: none; 
+  color: inherit; 
+}
+
+/* Estilos para os botões de navegação */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.ReceitasEmAlta .Carrossel p {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none; 
+    color: inherit; 
+}
+  
+  .ReceitasEmAlta2 {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none; 
+    color: inherit;
+  }
+  
+  .ReceitasEmAlta2 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    text-decoration: none; 
+    color: inherit;
+  }
+
+  .Informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .Contatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .Contatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .Contatar input {
+    border: solid 2px;
+    box-shadow: 2px 2px 2px;
+    display: block;
+    padding: 8px;
+    margin-top: 10px;
+    margin: 10px auto 0 auto;
+    width: 120px;
+    align-items: center;
+
+  }
+
+  .Contatar div :hover {
+    align-items: center;
+    color: aqua;
+  }
+
+  .voltar a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+  }
+
+  .livro-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    border: 2px solid black; 
+    border-radius: 10px; 
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .livro-container img {
+    text-decoration: none;
+    color: inherit;
+    border: solid 3px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .livro-container a {
+    text-decoration: none;
+    color: inherit;
+    border: solid 3px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .livro-container p {
+    text-decoration: none;
+    color: inherit;
+    border: solid 3px;
+    border-radius: 5px;
+    padding: 5px;
+  }  
+
+  form label, form input {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
